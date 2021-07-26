@@ -3,9 +3,11 @@ import "./css/App.css";
 
 function App() {
   return (
-    <div className="App p-2 container">
-      <div className="notification is-grey is-rounded">
-        App
+    <div className="App is-flex is-flex-direction-column">
+      <div className="container p-2 is-justify-content-center is-align-content-center fixedWidth">
+        <div className="notification is-grey is-rounded">
+          App
+        </div>
       </div>
     </div>
   );

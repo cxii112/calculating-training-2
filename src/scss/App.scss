@@ -1,5 +1,10 @@
 @import "colors";
 
 .App{
+  height: 100%;
+}
+
+.fixedWidth{
   max-width: 500px;
+  width: 100%;
 }
