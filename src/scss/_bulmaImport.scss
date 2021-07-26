@@ -1,34 +1,28 @@
-// @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
-// @import '../../node_modules/bulma/sass/utilities/functions.sass';
-// @import 'colors';
-// 2. Setup your Custom Colors
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import '../../node_modules/bulma/sass/utilities/functions.sass';
+@import 'colors';
+@import "radiuses";
 
-// $radius-custom-small: 8px;
-// $radius-custom: 10px;
-// $radius-custom-large: 13px;
+// Setup your Custom Colors
+$primary: $colorBlue;
+$secondary-invert: findColorInvert($colorBlue);
+$colorYellowInvert: findColorInvert($colorYellow);
+$colorRedInvert: findColorInvert($colorRed);
+$colorGreenInvert: findColorInvert($colorGreen);
+$colorGreyInvert: findColorInvert($colorGrey);
+$family-primary: $family-sans-serif;
 
+// Setup radiuses
 // $radius-small: $radius-custom-small;
 // $radius: $radius-custom;
 // $radius-large: $radius-custom-large;
-// $primary: $colorBasicGreen;
-// $secondary_invert: findColorInvert($colorBasicBlue);
-// $colorTaskLevel_1_invert: findColorInvert($colorTaskLevel_1);
-// $colorTaskLevel_2_invert: findColorInvert($colorTaskLevel_2);
-// $colorTaskLevel_3_invert: findColorInvert($colorTaskLevel_3);
-// $colorTaskLevel_4_invert: findColorInvert($colorTaskLevel_4);
-// $colorTaskLevel_5_invert: findColorInvert($colorTaskLevel_5);
-// $colorBasicTeal_invert: findColotInvert($colorBasicTeal);
-// $family-primary: $family-sans-serif;
 
-// 3. Add new color variables to the color map.
-// @import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
-// $addColors: (
-//   "task-level-1":($colorTaskLevel_1, $colorTaskLevel_1_invert),
-//   "task-level-2":($colorTaskLevel_2, $colorTaskLevel_2_invert),
-//   "task-level-3":($colorTaskLevel_3, $colorTaskLevel_3_invert),
-//   "task-level-4":($colorTaskLevel_4, $colorTaskLevel_4_invert),
-//   "task-level-5":($colorTaskLevel_5, $colorTaskLevel_5_invert),
-//   "accent": ($colorBasicTeal, $colorBasicTeal_invert),
-//   "secondary": ($colorBasicBlue, $secondary_invert),
-// );$colors: map-merge($colors, $addColors);
-// @import '../../node_modules/bulma/bulma.sass';
+// Add new color variables to the color map.
+@import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
+$addColors: (
+  "green": ($colorGreen, $colorGreenInvert),
+  "yellow": ($colorYellow, $colorYellowInvert),
+  "red": ($colorRed, $colorRedInvert),
+  "grey": ($colorGrey, $colorGreyInvert)
+);$colors: map-merge($colors, $addColors);
+@import '../../node_modules/bulma/bulma.sass';

@@ -1,1 +1,7 @@
 @import "zero";
+@import "colors";
+@import "bulmaImport";
+
+body{
+  background-color: $colorDarkGrey;
+}
