@@ -1,4 +1,5 @@
 import React from 'react';
+import ActionButton from './components/ActionButton';
 import OperatorPeeker from './components/OperationPeeker';
 import "./css/App.css";
 
@@ -8,6 +9,16 @@ function App() {
       <section className="container p-2 is-flex is-flex-direction-column is-justify-content-center is-align-content-center fixedWidth">
         <div className="notification is-grey is-rounded">
           <OperatorPeeker />
+          <ActionButton
+            classes={["button",
+              "is-primary",
+              "is-rounded",
+              "is-outlined",
+              "is-fullwidth",
+              "is-large"
+            ]}
+            content={"Начать!"}
+          />
         </div>
       </section>
     </div>

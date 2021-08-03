@@ -1,28 +1,36 @@
+import createIonIcon from "../additional/createIonIcon";
+import ActionButton from "./ActionButton";
 
 function OperatorPeeker() {
+  const buttonClasses = [
+    "button",
+    "is-outlined",
+    "is-primary"
+  ]
+  const plusSign = createIonIcon('add-outline');
+  const minusSign = createIonIcon('remove-outline');
+  const multiplySign = createIonIcon('close-outline');
+  const divideSign = '÷';
   return (
-    <div className="OperatorPeeker">
-      <nav className="panel">
-        <p className="panel-block">
-          <div className="">
-            Настройки
-          </div>
-        </p>
-        <p className="panel-tabs">
-          <a className="is-active">Сложение</a>
-          <a>Вычитание</a>
-          <a>Умножение</a>
-          <a>Деление</a>
-        </p>
-        <div className="panel-block">
-          settings
-        </div>
-        <div className="panel-block">
-          <button className="button is-primary is-outlined is-fullwidth">
-            Начало
-          </button>
-        </div>
-      </nav>
+    <div className="OperatorPeeker py-4">
+      <div className="buttons has-addons is-fullwidth">
+        <ActionButton
+          classes={buttonClasses}
+          content={plusSign}
+        />
+        <ActionButton
+          classes={buttonClasses}
+          content={minusSign}
+        />
+        <ActionButton
+          classes={buttonClasses}
+          content={multiplySign}
+        />
+        <ActionButton
+          classes={buttonClasses}
+          content={divideSign}
+        />
+      </div>
     </div>
   )
 };
