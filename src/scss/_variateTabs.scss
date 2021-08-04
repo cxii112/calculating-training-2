@@ -1,2 +1,17 @@
 @import "bulmaUtils";
-@import "colors";
+@import "variateColors";
+
+// General
+$tabs-border-bottom-color: $primary;
+$tabs-border-bottom-width: 1.5px;
+$tabs-link-color: $primary;
+
+// Active tab
+$tabs-link-active-color: $colorWhite;
+$tabs-link-active-border-bottom-color:$primary;
+$tabs-boxed-link-active-background-color: $primary;
+$tabs-boxed-link-active-border-color: $primary;
+
+// Other tabs
+$tabs-boxed-link-hover-background-color: $colorDeepBlue;
+$tabs-boxed-link-hover-border-bottom-color: $primary;

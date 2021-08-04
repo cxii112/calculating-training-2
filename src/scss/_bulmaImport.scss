@@ -1,8 +1,9 @@
 @import "bulmaUtils";
-@import 'colors';
+// @import 'colors';
 @import "radiuses";
 
 @import "variateColors";
-@import "variateColors";
+@import "variateTabs";
 
+@import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
 @import '../../node_modules/bulma/bulma.sass';

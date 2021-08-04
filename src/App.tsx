@@ -10,7 +10,7 @@ function App() {
           <OperatorPeeker />
           <ActionButton
             classes={["button",
-              "is-green",
+              "is-primary",
               "is-rounded",
               "is-outlined",
               "is-fullwidth",

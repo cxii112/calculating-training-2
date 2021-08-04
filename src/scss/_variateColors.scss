@@ -9,6 +9,9 @@ $colorGreenInvert: findColorInvert($colorGreen);
 $colorGreyInvert: findColorInvert($colorGrey);
 $family-primary: $family-sans-serif;
 
+
+@import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
+
 $addColors: (
   "green": ($colorGreen, $colorGreenInvert),
   "yellow": ($colorYellow, $colorYellowInvert),
