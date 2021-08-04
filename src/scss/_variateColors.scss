@@ -1,0 +1,17 @@
+@import "bulmaUtils";
+@import "colors";
+
+$primary: $colorBlue;
+$secondary-invert: findColorInvert($colorBlue);
+$colorYellowInvert: findColorInvert($colorYellow);
+$colorRedInvert: findColorInvert($colorRed);
+$colorGreenInvert: findColorInvert($colorGreen);
+$colorGreyInvert: findColorInvert($colorGrey);
+$family-primary: $family-sans-serif;
+
+$addColors: (
+  "green": ($colorGreen, $colorGreenInvert),
+  "yellow": ($colorYellow, $colorYellowInvert),
+  "red": ($colorRed, $colorRedInvert),
+  "grey": ($colorGrey, $colorGreyInvert)
+);$colors: map-merge($colors, $addColors);

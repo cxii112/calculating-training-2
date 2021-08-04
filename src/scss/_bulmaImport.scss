@@ -1,28 +1,8 @@
-@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
-@import '../../node_modules/bulma/sass/utilities/functions.sass';
+@import "bulmaUtils";
 @import 'colors';
 @import "radiuses";
 
-// Setup your Custom Colors
-$primary: $colorBlue;
-$secondary-invert: findColorInvert($colorBlue);
-$colorYellowInvert: findColorInvert($colorYellow);
-$colorRedInvert: findColorInvert($colorRed);
-$colorGreenInvert: findColorInvert($colorGreen);
-$colorGreyInvert: findColorInvert($colorGrey);
-$family-primary: $family-sans-serif;
+@import "variateColors";
+@import "variateColors";
 
-// Setup radiuses
-// $radius-small: $radius-custom-small;
-// $radius: $radius-custom;
-// $radius-large: $radius-custom-large;
-
-// Add new color variables to the color map.
-@import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
-$addColors: (
-  "green": ($colorGreen, $colorGreenInvert),
-  "yellow": ($colorYellow, $colorYellowInvert),
-  "red": ($colorRed, $colorRedInvert),
-  "grey": ($colorGrey, $colorGreyInvert)
-);$colors: map-merge($colors, $addColors);
 @import '../../node_modules/bulma/bulma.sass';
