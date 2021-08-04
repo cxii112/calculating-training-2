@@ -1,4 +1,3 @@
-import React from 'react';
 import ActionButton from './components/ActionButton';
 import OperatorPeeker from './components/OperationPeeker';
 import "./css/App.css";
@@ -16,9 +15,9 @@ function App() {
               "is-outlined",
               "is-fullwidth",
               "is-large"
-            ]}
-            content={"Начать!"}
-          />
+            ]}>
+            Начать!
+            </ActionButton>
         </div>
       </section>
     </div>

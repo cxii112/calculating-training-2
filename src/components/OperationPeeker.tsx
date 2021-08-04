@@ -1,9 +1,7 @@
 import createIonIcon from "../additional/createIonIcon";
-import ActionButton from "./ActionButton";
 
 function OperatorPeeker() {
   const buttonClasses = [
-    "button",
     "is-primary",
     "is-outlined"
   ];
@@ -16,28 +14,24 @@ function OperatorPeeker() {
       <div className="tabs is-centered is-boxed is-fullwidth is-primary is-outlined">
         <ul>
           <li className="is-active">
-            <ActionButton
-              classes={buttonClasses}
-              content={plusSign}
-            />
+            <a>
+              <span>{plusSign}</span>
+            </a>
           </li>
           <li className="">
-            <ActionButton
-              classes={buttonClasses}
-              content={minusSign}
-            />
+            <a>
+              <span>{minusSign}</span>
+            </a>
           </li>
           <li className="">
-            <ActionButton
-              classes={buttonClasses}
-              content={multiplySign}
-            />
+            <a>
+              <span>{multiplySign}</span>
+            </a>
           </li>
           <li className="">
-            <ActionButton
-              classes={buttonClasses}
-              content={divideSign}
-            />
+            <a>
+              <span>{divideSign}</span>
+            </a>
           </li>
         </ul>
       </div>
