@@ -6,7 +6,7 @@ function OperatorPeeker() {
     "button",
     "is-primary",
     "is-outlined"
-  ]
+  ];
   const plusSign = createIonIcon('add-outline');
   const minusSign = createIonIcon('remove-outline');
   const multiplySign = createIonIcon('close-outline');
@@ -42,7 +42,7 @@ function OperatorPeeker() {
         </ul>
       </div>
     </div>
-  )
+  );
 };
 
 export default OperatorPeeker;
