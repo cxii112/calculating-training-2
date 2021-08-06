@@ -11,9 +11,16 @@ function OperationPicker(props: OperationPickerProps) {
   const minusSign = createIonIcon('remove-outline');
   const multiplySign = createIonIcon('close-outline');
   const divideSign = '÷';
-  const tabsClasses = [
-    'tab'
+  const everyTabClasses = [
+    'tab',
   ];
+  const tabsClasses = [
+    'is-centered',
+    'is-toggle',
+    'is-fullwidth',
+    'is-primary',
+    'is-outlined',
+  ]
   const clickHandler = (currentTabId: string,
     newOperation: Operation) => {
     removeClassByClass('tab', 'is-active');
@@ -22,11 +29,11 @@ function OperationPicker(props: OperationPickerProps) {
   };
   return (
     <div className='OperationPicker py-4'>
-      <div className='tabs is-centered is-toggle is-fullwidth is-primary is-outlined'>
+      <div className={'tabs' + ' ' + tabsClasses.join(' ')}>
         <ul>
           <li
             id='summ-tab'
-            className={tabsClasses.join(' ') + ' ' + 'is-active'}
+            className={everyTabClasses.join(' ') + ' ' + 'is-active'}
             onClick={event => {
               clickHandler(event.currentTarget.id,
                 Operation.SUMM)
@@ -37,7 +44,7 @@ function OperationPicker(props: OperationPickerProps) {
           </li>
           <li
             id='subtract-tab'
-            className={tabsClasses.join(' ')}
+            className={everyTabClasses.join(' ')}
             onClick={event => {
               clickHandler(event.currentTarget.id,
                 Operation.SUBTRACT)
@@ -48,7 +55,7 @@ function OperationPicker(props: OperationPickerProps) {
           </li>
           <li
             id='multiply-tab'
-            className={tabsClasses.join(' ')}
+            className={everyTabClasses.join(' ')}
             onClick={event => {
               clickHandler(event.currentTarget.id,
                 Operation.MULTIPLY)
@@ -59,7 +66,7 @@ function OperationPicker(props: OperationPickerProps) {
           </li>
           <li
             id='divide-tab'
-            className={tabsClasses.join(' ')}
+            className={everyTabClasses.join(' ')}
             onClick={event => {
               clickHandler(event.currentTarget.id,
                 Operation.DIVIDE)
