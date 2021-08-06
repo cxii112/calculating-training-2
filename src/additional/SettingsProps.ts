@@ -1,4 +1,4 @@
-import Operation from "./Operation";
+import Operation from './Operation';
 
 interface SettingsProps {
   operation: Operation
