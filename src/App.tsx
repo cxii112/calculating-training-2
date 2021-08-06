@@ -18,11 +18,11 @@ function App() {
     <div className='App'>
       <section className='container p-2 is-flex is-flex-direction-column is-justify-content-center is-align-content-center fixedWidth'>
         <div className='notification is-grey is-rounded'>
-          <OperationPicker
-            operationPickerCallback={setOperation} />
           <SettingCtx.Provider value={{ operation: operation }}>
             <Settings />
           </SettingCtx.Provider>
+          <OperationPicker
+            operationPickerCallback={setOperation} />
           <ActionButton
             classes={['button',
               'is-primary',

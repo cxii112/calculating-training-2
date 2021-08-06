@@ -22,7 +22,7 @@ function OperationPicker(props: OperationPickerProps) {
   };
   return (
     <div className='OperationPicker py-4'>
-      <div className='tabs is-centered is-boxed is-fullwidth is-primary is-outlined'>
+      <div className='tabs is-centered is-toggle is-fullwidth is-primary is-outlined'>
         <ul>
           <li
             id='summ-tab'
