@@ -17,6 +17,7 @@ function OperationPicker(props: OperationPickerProps) {
   const tabsClasses = [
     'is-centered',
     'is-toggle',
+    'is-toggle-rounded',
     'is-fullwidth',
     'is-primary',
     'is-outlined',

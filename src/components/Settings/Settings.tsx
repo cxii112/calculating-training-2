@@ -22,10 +22,18 @@ function Settings() {
         break;
     }
   }
-  return <>
-    <h1 className='title'>Настройки</h1>
-    {chooseSetting()}
-    </>
+  return (<>
+    <div className='level is-mobile'>
+      <div className='level-item has-text-centered'>
+        <h1 className='title'>Настройки</h1>
+      </div>
+    </div>
+    <div className='level is-mobile'>
+      <div className='level-item has-text-centered'>
+        {chooseSetting()}
+      </div>
+    </div>
+  </>);
 }
 
 export default Settings;

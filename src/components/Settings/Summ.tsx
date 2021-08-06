@@ -1,6 +1,6 @@
 function Summ() {
   return <>
-    <h2 className='title'>
+    <h2 className='title is-4'>
       Сложение
     </h2>
     </>
