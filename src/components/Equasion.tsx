@@ -1,11 +1,11 @@
 import { useState } from "react";
-import EOperation, {  } from "../additional/EOperation";
-interface IEquasionProps {
+import Operation, {  } from "../additional/Operation";
+interface EquasionProps {
   left: number,
   right: number,
-  operation: EOperation
+  operation: Operation
 }
-function Equation(props: IEquasionProps) {
+function Equation(props: EquasionProps) {
 
   const [left, setLeft] = useState<number>(props.left);
   const [right, setRight] = useState<number>(props.right);

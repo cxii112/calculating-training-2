@@ -1,8 +1,8 @@
-enum EOperation {
+enum Operation {
   SUMM,
   SUBTRACT,
   MULTIPLY,
   DIVIDE
 };
 
-export default EOperation;
+export default Operation;
