@@ -4,6 +4,7 @@ interface RangeInputProps {
   minimum: Number,
   maximum: Number,
   current: Number,
+  classes: string[],
   decrease?: Function,
   Increase?: Function
 }
@@ -14,18 +15,24 @@ function RangeInput(props: RangeInputProps) {
     'is-primary',
     'is-outlined',
   ];
-  const inputClasses = [
-    'input',
+  const labelClasses = [
+    'button',
+    'is-static',
     'is-primary',
   ];
 
   return <>
     <div className="control has-addons">
-      <button role='button' className={buttonsClasses.join(' ')}>
+      <button role='button' className={
+        buttonsClasses.join(' ') + ' ' + props.classes.join(' ')}>
         {createIonIcon('remove-outline')}
       </button>
-      <input type='text' className={inputClasses.join(' ')} readOnly />
-      <button role='button' className={buttonsClasses.join(' ')}>
+      <button role='button' className={
+        labelClasses.join(' ') + ' ' + props.classes.join(' ')}>
+        {props.current}
+      </button>
+      <button role='button' className={
+        buttonsClasses.join(' ') + ' ' + props.classes.join(' ')}>
         {createIonIcon('add-outline')}
       </button>
     </div>

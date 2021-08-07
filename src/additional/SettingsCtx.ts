@@ -2,7 +2,7 @@ import React, { createContext } from 'react';
 import Operation from './Operation';
 import SettingsProps from './SettingsProps';
 
-const SettingCtx = createContext<SettingsProps>(
+const SettingsCtx = createContext<SettingsProps>(
   {
     operation: Operation.SUMM,
     numbersInFirstMember: 1,
@@ -11,4 +11,4 @@ const SettingCtx = createContext<SettingsProps>(
 )
 
 
-export default SettingCtx;
+export default SettingsCtx;
