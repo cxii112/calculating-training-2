@@ -4,7 +4,9 @@ import SettingsProps from './SettingsProps';
 
 const SettingCtx = createContext<SettingsProps>(
   {
-    operation: Operation.SUMM
+    operation: Operation.SUMM,
+    numbersInFirstMember: 1,
+    numbersInSecondMember: 1
   }
 )
 

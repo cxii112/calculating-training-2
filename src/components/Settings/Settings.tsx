@@ -28,11 +28,7 @@ function Settings() {
         <h1 className='title'>Настройки</h1>
       </div>
     </div>
-    <div className='level is-mobile'>
-      <div className='level-item has-text-centered'>
         {chooseSetting()}
-      </div>
-    </div>
   </>);
 }
 
