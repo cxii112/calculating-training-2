@@ -23,6 +23,7 @@
 
 # IDE
 .vs
+.vscode
 
 npm-debug.log*
 yarn-debug.log*
